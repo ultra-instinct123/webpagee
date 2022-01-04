@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:5500/web.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<link rel="stylesheet" href="./Document webpage_files/style.css"></head>
+<body>
+    <!-- navebar-->
+    <nav class="navbar">
+        <h1 class="logo">portfolio</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="http://127.0.0.1:5500/web.html#"></a>profile</li>
+            <li><a href="http://127.0.0.1:5500/web.html#"></a>projects</li>
+            <li><a href="http://127.0.0.1:5500/web.html#"></a>skills</li>
+            <li class="ctn"><a href="http://127.0.0.1:5500/web.html#"></a>contact</li>
+        </ul>
+        <img src="./Document webpage_files/menu-btn.png" alt="" class="menu-btn">
+         
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>let's look at some visual arts</h2>
+            <div class="line"></div>
+            <h1>VISUAL WORKS BY TEJA</h1>
+            <a href="http://127.0.0.1:5500/web.html#" class="ctn">Explore</a>
+        </div>
+    </header>
+    <!-- ==events== -->
+    <section class="events">
+        <div class="title">
+            <h1>3D OBJECTS</h1>
+            <div class="line"></div>
+            <h2>Created by using Autodesk</h2>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./Document webpage_files/taj mahal.jpg" alt="">
+                <h4>Taj mahal</h4>
+                <p>Miniature 3d-model of taj mahal. Measurements proportional to the original</p>
+                <a href="http://127.0.0.1:5500/web.html#" class="ctn">See More</a>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="./Document webpage_files/curved surface.jpg" alt="">
+                    <h4>curved surface</h4>
+                    <p>It's an iron box and one of the best example to design curved surface in Autodesk </p>
+                    <a href="http://127.0.0.1:5500/web.html#" class="ctn">See More</a>
+                </div>
+        </div>
+    </div></section>
+    <section class="explore">
+        <div class="explore-content">
+            <h1>vector illustrations</h1>
+            <div class="line"></div>
+        <a href="http://127.0.0.1:5500/web.html#" class="ctn">Explore</a>
+        </div>
+    </section>
+    <section class="footer">
+        <p>PLOT:37&amp;52,PHASE-4,MADHURA NAGAR,NIZAMPET,HYDERABAD,TELANGANA,INDIA | phone: 9390438443 | Email:saiteja244139@gmail.com</p>
+        <p>Copyright Ⓒ 2022 teja portfolio </p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
